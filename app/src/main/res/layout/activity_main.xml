@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/interestRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ellipsize="start"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Amount of Interest"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/mortgagetext"
+        app:layout_constraintStart_toStartOf="@+id/mortgagetext"
+        app:layout_constraintTop_toBottomOf="@+id/mortgagetext" />
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:text="Calculate"
+        app:layout_constraintEnd_toEndOf="@+id/tenuretext"
+        app:layout_constraintStart_toStartOf="@+id/tenuretext"
+        app:layout_constraintTop_toBottomOf="@+id/tenuretext" />
+
+    <TextView
+        android:id="@+id/mortgagetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Mortgage"
+        app:layout_constraintEnd_toEndOf="@+id/userMortgage"
+        app:layout_constraintStart_toStartOf="@+id/userMortgage"
+        app:layout_constraintTop_toBottomOf="@+id/userMortgage" />
+
+    <TextView
+        android:id="@+id/EMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ellipsize="start"
+        android:gravity="center_horizontal"
+        android:text="Result"
+        android:textSize="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/calculate"
+        app:layout_constraintStart_toStartOf="@+id/calculate"
+        app:layout_constraintTop_toBottomOf="@+id/calculate" />
+
+    <EditText
+        android:id="@+id/duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:ellipsize="start"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Duration in Months"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/IRtext"
+        app:layout_constraintStart_toStartOf="@+id/IRtext"
+        app:layout_constraintTop_toBottomOf="@+id/IRtext" />
+
+    <TextView
+        android:id="@+id/IRtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:text="Interest Rate"
+        app:layout_constraintEnd_toEndOf="@+id/interestRate"
+        app:layout_constraintStart_toStartOf="@+id/interestRate"
+        app:layout_constraintTop_toBottomOf="@+id/interestRate" />
+
+    <EditText
+        android:id="@+id/userMortgage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:ellipsize="start"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint=" Amount of Mortgage"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tenuretext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Tenure"
+        app:layout_constraintEnd_toEndOf="@+id/duration"
+        app:layout_constraintStart_toStartOf="@+id/duration"
+        app:layout_constraintTop_toBottomOf="@+id/duration" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="92dp"
+        android:layout_height="26dp"
+        android:text="EMI Calculator"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
